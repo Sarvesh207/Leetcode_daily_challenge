@@ -11,8 +11,8 @@
     Output: 9
  */
 class trappingWater {
-    class Solution {
-    public int trap(int[] height) {
+   
+    public static int trap(int[] height) {
         int n = height.length;
         //cal left max 
         int leftmax [] = new int[n];
@@ -36,8 +36,10 @@ class trappingWater {
         }
             return trappedwater;
     }
-}
+
     public static void main(String[] args) {
        int [] height = {4,2,0,3,2,5};
+       int result = trap(height);
+       System.out.println(result);
     }
 }
